@@ -21,8 +21,6 @@ class LifoPush {
 
 public:
 
-	LifoPush() {} // Needed for old compilers
-
 	bool list_empty()
 	{
 		return top.load() == nullptr;
