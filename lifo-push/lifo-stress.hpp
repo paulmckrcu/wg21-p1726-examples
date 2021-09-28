@@ -42,6 +42,7 @@ void *pop_em()
 		continue;
 	while (goflag.load() == 1)
 		lifo.list_pop_all([](char *my_s) { (*my_s)++; });
+	return nullptr;
 }
 
 int main(int argc, char *argv[])
